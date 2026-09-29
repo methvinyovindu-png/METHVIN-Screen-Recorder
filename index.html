@@ -1,12 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>METHVIN Screen Recorder</title>
-    <meta name="description" content="METHVIN Screen Recorder - A simple and powerful screen recorder for Windows.">
 
     <style>
         * {
@@ -20,24 +17,20 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
             background: #0b0b0f;
-            color: #ffffff;
-            line-height: 1.6;
+            color: white;
         }
 
         header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(11, 11, 15, 0.95);
-            border-bottom: 1px solid #22222b;
+            background: #111116;
+            padding: 20px;
+            border-bottom: 1px solid #25252f;
         }
 
         .nav {
             max-width: 1100px;
             margin: auto;
-            padding: 18px 25px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -50,33 +43,18 @@
         }
 
         .nav a {
-            color: #ffffff;
+            color: white;
             text-decoration: none;
-            margin-left: 25px;
-            font-size: 15px;
-        }
-
-        .nav a:hover {
-            color: #ff3b30;
+            margin-left: 20px;
         }
 
         .hero {
-            min-height: 75vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             text-align: center;
-            padding: 80px 20px;
-            background:
-                radial-gradient(circle at top, #2b1010 0%, #0b0b0f 55%);
-        }
-
-        .hero-content {
-            max-width: 800px;
+            padding: 100px 20px;
         }
 
         .hero h1 {
-            font-size: 56px;
+            font-size: 55px;
             margin-bottom: 20px;
         }
 
@@ -85,10 +63,9 @@
         }
 
         .hero p {
-            color: #b9b9c2;
-            font-size: 19px;
-            max-width: 650px;
-            margin: 0 auto 35px;
+            color: #b5b5bd;
+            font-size: 18px;
+            margin-bottom: 35px;
         }
 
         .download-btn {
@@ -99,31 +76,28 @@
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 17px;
-            transition: 0.2s;
         }
 
         .download-btn:hover {
             background: #ff554c;
-            transform: translateY(-2px);
         }
 
         section {
             max-width: 1100px;
             margin: auto;
-            padding: 80px 25px;
+            padding: 70px 20px;
         }
 
         .section-title {
             text-align: center;
-            font-size: 36px;
-            margin-bottom: 45px;
+            margin-bottom: 40px;
+            font-size: 35px;
         }
 
         .features {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
+            gap: 20px;
         }
 
         .card {
@@ -135,8 +109,8 @@
         }
 
         .card h3 {
-            margin-bottom: 12px;
             color: #ff3b30;
+            margin-bottom: 10px;
         }
 
         .card p {
@@ -145,9 +119,9 @@
 
         .download-section {
             text-align: center;
-            background: #111116;
+            background: #15151c;
             border-radius: 15px;
-            padding: 60px 25px;
+            padding: 60px 20px;
         }
 
         .download-section p {
@@ -156,29 +130,19 @@
         }
 
         footer {
-            border-top: 1px solid #22222b;
             text-align: center;
-            padding: 30px 20px;
-            color: #777782;
-            font-size: 14px;
+            padding: 30px;
+            color: #777;
+            border-top: 1px solid #22222b;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 700px) {
             .hero h1 {
                 font-size: 40px;
             }
 
             .features {
                 grid-template-columns: 1fr;
-            }
-
-            .nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .nav a {
-                margin: 0 8px;
             }
         }
     </style>
@@ -198,25 +162,23 @@
 </header>
 
 <section class="hero">
-    <div class="hero-content">
 
-        <h1>
-            METHVIN <span>Screen Recorder</span>
-        </h1>
+    <h1>
+        METHVIN <span>Screen Recorder</span>
+    </h1>
 
-        <p>
-            A simple and powerful screen recorder for Windows.
-            Record your screen easily and quickly.
-        </p>
+    <p>
+        A simple and powerful screen recorder for Windows.
+        Record your screen easily and quickly.
+    </p>
 
-        <a
-            class="download-btn"
-            href="https://github.com/methvinyovindu-png/METHVIN-Screen-Recorder/releases/latest/download/METHVIN%20Screen%20Recorder%20Setup.exe"
-        >
-            Download Now
-        </a>
+    <a
+        class="download-btn"
+        href="https://github.com/methvinyovindu-png/METHVIN-Screen-Recorder/releases/latest"
+    >
+        Download Now
+    </a>
 
-    </div>
 </section>
 
 <section id="features">
@@ -227,23 +189,17 @@
 
         <div class="card">
             <h3>🎥 Screen Recording</h3>
-            <p>
-                Record your Windows screen easily and capture what you need.
-            </p>
+            <p>Record your Windows screen easily.</p>
         </div>
 
         <div class="card">
             <h3>⚡ Fast & Simple</h3>
-            <p>
-                A clean and simple interface designed to make recording easy.
-            </p>
+            <p>Simple and easy-to-use interface.</p>
         </div>
 
         <div class="card">
             <h3>🆓 Free</h3>
-            <p>
-                METHVIN Screen Recorder is free to download and use.
-            </p>
+            <p>Free to download and use.</p>
         </div>
 
     </div>
@@ -254,7 +210,9 @@
 
     <div class="download-section">
 
-        <h2 class="section-title">Download for Windows</h2>
+        <h2 class="section-title">
+            Download for Windows
+        </h2>
 
         <p>
             Get the latest version of METHVIN Screen Recorder.
@@ -262,7 +220,7 @@
 
         <a
             class="download-btn"
-            href="https://github.com/methvinyovindu-png/METHVIN-Screen-Recorder/releases/latest/download/METHVIN%20Screen%20Recorder%20Setup.exe"
+            href="https://github.com/methvinyovindu-png/METHVIN-Screen-Recorder/releases/latest"
         >
             Download for Windows
         </a>
@@ -272,9 +230,8 @@
 </section>
 
 <footer>
-    © 2026 METHVIN Screen Recorder. All rights reserved.
+    © 2026 METHVIN Screen Recorder
 </footer>
 
 </body>
 </html>
-```
